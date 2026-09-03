@@ -1,0 +1,6 @@
+search for a word in a document
+sort the student marks in ascending order
+find the shortest path between two cities
+detect duplicate documents
+solve a sudoku puzzle
+compress a text file
