@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": "cp1",
+      "name": "Samsung Galaxy S24 256GB"
+    },
+    {
+      "id": "cp2",
+      "name": "Apple iPhone 15 128GB"
+    },
+    {
+      "id": "cp3",
+      "name": "OnePlus 12 256GB"
+    },
+    {
+      "id": "cp4",
+      "name": "Redmi Note 13 Pro 128GB"
+    },
+    {
+      "id": "cp5",
+      "name": "Samsung Galaxy A54 128GB"
+    }
+  ],
+  "sellers": [
+    {
+      "id": "s1",
+      "name": "QuickKart",
+      "shipping": 99
+    },
+    {
+      "id": "s2",
+      "name": "MegaMart",
+      "shipping": 49
+    },
+    {
+      "id": "s3",
+      "name": "ShopEase",
+      "shipping": 79
+    },
+    {
+      "id": "s4",
+      "name": "BazaarHub",
+      "shipping": 0
+    }
+  ],
+  "prices": {
+    "s1": {
+      "cp1": 68999,
+      "cp2": 79999,
+      "cp3": null,
+      "cp4": 24999,
+      "cp5": 38999
+    },
+    "s2": {
+      "cp1": 65499,
+      "cp2": 77999,
+      "cp3": 64999,
+      "cp4": null,
+      "cp5": 37499
+    },
+    "s3": {
+      "cp1": null,
+      "cp2": 81999,
+      "cp3": 63999,
+      "cp4": 23999,
+      "cp5": null
+    },
+    "s4": {
+      "cp1": 67999,
+      "cp2": null,
+      "cp3": 65999,
+      "cp4": 24499,
+      "cp5": 39499
+    }
+  }
+}

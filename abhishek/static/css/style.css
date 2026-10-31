@@ -1,0 +1,257 @@
+/* static/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #FAFAFA;
+  --surface: #FFFFFF;
+  --text: #171717;
+  --text-muted: #666666;
+  --border: #E5E5E5;
+  --accent: #8b5cf6; /* Violet to match the blobs */
+  --accent-hover: #7c3aed; /* Darker violet */
+  --success: #16A34A;
+  --danger: #DC2626;
+  --radius: 8px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding-bottom: 60px;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.15); /* More translucent glass */
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Softer border */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255,255,255,0.4); /* Softer inner glow */
+  padding: 0.6rem 1.5rem;
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+  max-width: 650px;
+  margin: 1rem auto;
+  border-radius: 9999px;
+}
+
+.nav-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s, transform 0.2s;
+  padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  transform: scale(1.05);
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 20px;
+}
+
+/* Headings */
+h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem; }
+.subtitle { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem; }
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.6); /* Translucent white */
+  backdrop-filter: blur(24px) saturate(120%);
+  -webkit-backdrop-filter: blur(24px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.8); /* Highlight edge */
+  border-radius: 16px; /* Smooth rounded corners */
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 1); /* Soft glow and shadow */
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.95rem;
+}
+
+.btn:hover { background: var(--accent-hover); }
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+.btn-outline:hover {
+  background: #F0FDFA;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+th, td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+th {
+  background: #F9FAFB;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: #F1F5F9;
+  color: var(--text-muted);
+}
+.tag-success { background: #DCFCE7; color: var(--success); }
+
+/* Collapsible "Show me how it works" */
+details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+details summary {
+  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--accent);
+  list-style: none;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.8em;
+  transition: transform 0.2s;
+}
+details[open] summary::before { transform: rotate(90deg); }
+
+.details-content {
+  padding: 0 1rem 1rem 1rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Blurry Blob Background (Translated from Mage-UI Tailwind) */
+@keyframes pop-blob {
+  0% { transform: scale(1); }
+  33% { transform: scale(1.2); }
+  66% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+.blurry-blob-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10; /* Strictly behind everything */
+  overflow: hidden;
+  pointer-events: none; /* Click-through */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blurry-blob {
+  position: absolute;
+  width: 35rem; /* Increased size to spread more */
+  height: 35rem; /* Increased size */
+  border-radius: 50%;
+  opacity: 0.45;
+  mix-blend-mode: multiply;
+  filter: blur(120px); /* Increased blur for a wider spread */
+  animation: pop-blob 7s infinite ease-in-out; /* Slowed down slightly for smoother effect */
+}
+
+.blob-purple {
+  background-color: #c084fc; 
+  margin-right: 20rem;
+  margin-bottom: 5rem;
+}
+
+.blob-blue {
+  background-color: #60a5fa; 
+  margin-left: 20rem;
+  margin-top: 5rem;
+  animation-delay: 3.5s; 
+}

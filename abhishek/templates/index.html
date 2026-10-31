@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Home – Product Match Lab{% endblock %}
+
+{% block content %}
+<div style="text-align: center; margin: 4rem 0;">
+  <h1 style="font-size: 3rem; margin-bottom: 1rem;">Product Match Lab</h1>
+  <p class="subtitle" style="font-size: 1.5rem; max-width: 600px; margin: 0 auto 3rem auto;">
+    Same product. One listing. Best price.
+  </p>
+  
+  <div class="card" style="max-width: 800px; margin: 0 auto 4rem auto; text-align: left;">
+    <h2 style="margin-top: 0;">What does this tool do?</h2>
+    <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+      Different sellers often list the exact same physical product using completely different names. This tool automatically finds identical products, groups them together, and helps you buy them for the absolute lowest price.
+    </p>
+    
+    <div style="display: flex; justify-content: space-between; align-items: center; background: #F8FAFC; padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--border);">
+      <div>
+        <p style="color: var(--danger); text-decoration: line-through; font-size: 0.9rem;">Samsung Galaxy S24 256GB Black - Rs 68,999</p>
+        <p style="color: var(--danger); text-decoration: line-through; font-size: 0.9rem;">Samsung S24 - 256 GB - Black - Rs 65,499</p>
+      </div>
+      <div style="font-size: 1.5rem; color: var(--text-muted);">→</div>
+      <div style="text-align: right;">
+        <p style="font-weight: 600;">Samsung Galaxy S24 256GB Black</p>
+        <p style="color: var(--success); font-weight: 700;">Best Price: Rs 65,499</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; text-align: left;">
+    
+    <div class="card">
+      <h3 style="margin-bottom: 0.5rem;">1. Match Listings</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; min-height: 3rem;">
+        We clean messy product titles, find the ones that are actually the same item, and show you the best price.
+      </p>
+      <a href="/match" class="btn">Try Matcher</a>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-bottom: 0.5rem;">2. Smart Cart</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; min-height: 3rem;">
+        Pick what you want to buy. We find the absolute cheapest way to split your cart across sellers, including shipping.
+      </p>
+      <a href="/cart" class="btn">Try Cart</a>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-bottom: 0.5rem;">3. Order Assignment</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; min-height: 3rem;">
+        Sellers have limited stock. We assign bulk orders to sellers so that as many items as possible get fulfilled.
+      </p>
+      <a href="/assign" class="btn">Try Assignment</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1596 @@
+{
+  "products": [
+    {
+      "id": "P001",
+      "name": "Apple Iphone Se (2020)"
+    },
+    {
+      "id": "P002",
+      "name": "Apple Iphone Se (2020)"
+    },
+    {
+      "id": "P003",
+      "name": "Apple Iphone 12"
+    },
+    {
+      "id": "P004",
+      "name": "Apple Iphone 12"
+    },
+    {
+      "id": "P005",
+      "name": "Apple Iphone 13 Mini 128Gb"
+    },
+    {
+      "id": "P006",
+      "name": "Apple Iphone 13 Mini"
+    },
+    {
+      "id": "P008",
+      "name": "Apple Iphone 14"
+    },
+    {
+      "id": "P009",
+      "name": "Apple Iphone 14 Pro Max"
+    },
+    {
+      "id": "P010",
+      "name": "Apple Iphone Xs Max"
+    },
+    {
+      "id": "P011",
+      "name": "Samsung Galaxy A13"
+    },
+    {
+      "id": "P012",
+      "name": "Samsung Galaxy A13 5G"
+    },
+    {
+      "id": "P013",
+      "name": "Samsung Galaxy A53 5G"
+    },
+    {
+      "id": "P014",
+      "name": "Samsung Galaxy S21 Fe 5G"
+    },
+    {
+      "id": "P015",
+      "name": "Samsung Galaxy S21+ 5G"
+    },
+    {
+      "id": "P016",
+      "name": "Samsung Galaxy S22 128Gb"
+    },
+    {
+      "id": "P017",
+      "name": "Samsung Galaxy S22+ 5G"
+    },
+    {
+      "id": "P018",
+      "name": "Samsung Galaxy S23"
+    },
+    {
+      "id": "P019",
+      "name": "Samsung Galaxy S24"
+    },
+    {
+      "id": "P021",
+      "name": "Oneplus Nord Ce 2 5G"
+    },
+    {
+      "id": "P022",
+      "name": "Oneplus 10 Pro"
+    },
+    {
+      "id": "P023",
+      "name": "Xiaomi Poco M4 Pro"
+    },
+    {
+      "id": "P024",
+      "name": "Poco C31 (Royal Blue, 64 Gb)"
+    },
+    {
+      "id": "P025",
+      "name": "Xiaomi Poco X4 Pro 5G"
+    },
+    {
+      "id": "P026",
+      "name": "Xiaomi Redmi Note 11"
+    },
+    {
+      "id": "P027",
+      "name": "Xiaomi Redmi Note 11 Pro 5G"
+    },
+    {
+      "id": "P028",
+      "name": "Realme 9 Pro"
+    },
+    {
+      "id": "P029",
+      "name": "Motorola Moto G Power (2021)"
+    },
+    {
+      "id": "P030",
+      "name": "Motorola Moto G32"
+    },
+    {
+      "id": "SIM001",
+      "name": "Samsung Galaxy S24 256Gb Black"
+    },
+    {
+      "id": "SIM002",
+      "name": "Samsung Galaxy S24 256Gb White"
+    },
+    {
+      "id": "SIM003",
+      "name": "Samsung Galaxy S24 128Gb Black"
+    },
+    {
+      "id": "SIM004",
+      "name": "Samsung Galaxy S24 Ultra 256Gb Black"
+    },
+    {
+      "id": "SIM005",
+      "name": "Apple Iphone 15 128Gb Blue"
+    },
+    {
+      "id": "SIM006",
+      "name": "Apple Iphone 15 256Gb Blue"
+    },
+    {
+      "id": "SIM007",
+      "name": "Apple Iphone 15 Pro 256Gb Black"
+    },
+    {
+      "id": "SIM008",
+      "name": "Oneplus 12 256Gb Green"
+    },
+    {
+      "id": "SIM009",
+      "name": "Redmi Note 13 Pro 128Gb Purple"
+    },
+    {
+      "id": "SIM010",
+      "name": "Samsung Galaxy A54 128Gb Lime"
+    },
+    {
+      "id": "SIM011",
+      "name": "Google Pixel 8 128Gb Obsidian"
+    },
+    {
+      "id": "SIM012",
+      "name": "Google Pixel 8 Pro 128Gb Bay"
+    },
+    {
+      "id": "SIM013",
+      "name": "Google Pixel 7 128Gb Snow"
+    },
+    {
+      "id": "SIM014",
+      "name": "Nothing Phone 2 256Gb White"
+    },
+    {
+      "id": "SIM015",
+      "name": "Asus Rog Phone 8 256Gb Phantom"
+    },
+    {
+      "id": "DYN_532664",
+      "name": "Noth="
+    },
+    {
+      "id": "DYN_469835",
+      "name": "Iphoen"
+    },
+    {
+      "id": "DYN_822671",
+      "name": "Iphone 18"
+    },
+    {
+      "id": "DYN_378547",
+      "name": "Iphone `8"
+    },
+    {
+      "id": "DYN_24337",
+      "name": "Iphone 18 P"
+    },
+    {
+      "id": "DYN_78852",
+      "name": "Iphone 18 Pro Ma"
+    },
+    {
+      "id": "DYN_835768",
+      "name": "Iphone 18 Pro Max"
+    },
+    {
+      "id": "DYN_5651",
+      "name": "Nothing Phone Pro"
+    },
+    {
+      "id": "DYN_251289",
+      "name": "Nothing Phone\\"
+    },
+    {
+      "id": "DYN_456085",
+      "name": "Nothing Phone U"
+    },
+    {
+      "id": "DYN_92225",
+      "name": "Nothing Phone Ul"
+    },
+    {
+      "id": "DYN_522444",
+      "name": "Nothing Phone Ultra"
+    },
+    {
+      "id": "DYN_220317",
+      "name": "Samesung"
+    },
+    {
+      "id": "DYN_742949",
+      "name": "Samesung."
+    },
+    {
+      "id": "DYN_570127",
+      "name": "Samsung S"
+    },
+    {
+      "id": "DYN_527243",
+      "name": "Samsung S2"
+    },
+    {
+      "id": "DYN_755935",
+      "name": "Samsung S24"
+    },
+    {
+      "id": "DYN_451221",
+      "name": "Samsung S25"
+    },
+    {
+      "id": "DYN_423303",
+      "name": "Samsung S25 U"
+    },
+    {
+      "id": "DYN_265087",
+      "name": "Samsung S25 Ul"
+    },
+    {
+      "id": "DYN_204311",
+      "name": "Samsung S25 Ult"
+    },
+    {
+      "id": "DYN_614130",
+      "name": "Samsung S25 Ultra"
+    },
+    {
+      "id": "DYN_410254",
+      "name": "Sony"
+    }
+  ],
+  "sellers": [
+    {
+      "id": "amazon_de",
+      "name": "Amazon DE",
+      "shipping": 0,
+      "is_foreign": true
+    },
+    {
+      "id": "amazon_us",
+      "name": "Amazon US",
+      "shipping": 0,
+      "is_foreign": true
+    },
+    {
+      "id": "amazon_uk",
+      "name": "Amazon UK",
+      "shipping": 0,
+      "is_foreign": true
+    },
+    {
+      "id": "flipkart",
+      "name": "Flipkart",
+      "shipping": 50,
+      "is_foreign": false
+    },
+    {
+      "id": "best_buy",
+      "name": "Best Buy",
+      "shipping": 150,
+      "is_foreign": false
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "shipping": 99,
+      "is_foreign": false
+    },
+    {
+      "id": "aliexpress",
+      "name": "AliExpress",
+      "shipping": 99,
+      "is_foreign": false
+    },
+    {
+      "id": "motorola",
+      "name": "Motorola",
+      "shipping": 99,
+      "is_foreign": false
+    },
+    {
+      "id": "shopease",
+      "name": "ShopEase",
+      "shipping": 99,
+      "is_foreign": false
+    },
+    {
+      "id": "croma",
+      "name": "Croma",
+      "shipping": 99,
+      "is_foreign": false
+    },
+    {
+      "id": "quickkart",
+      "name": "QuickKart",
+      "shipping": 99,
+      "is_foreign": false
+    },
+    {
+      "id": "megamart",
+      "name": "MegaMart",
+      "shipping": 99,
+      "is_foreign": false
+    },
+    {
+      "id": "bazaarhub",
+      "name": "BazaarHub",
+      "shipping": 99,
+      "is_foreign": false
+    }
+  ],
+  "prices": {
+    "amazon_de": {
+      "P001": {
+        "base": 20520,
+        "import_fee": 5746,
+        "total": 26266
+      },
+      "P002": {
+        "base": 15686,
+        "import_fee": 4392,
+        "total": 20078
+      },
+      "P003": {
+        "base": 20885,
+        "import_fee": 5848,
+        "total": 26733
+      },
+      "P004": {
+        "base": 44316,
+        "import_fee": 12408,
+        "total": 56724
+      },
+      "P006": {
+        "base": 51511,
+        "import_fee": 14423,
+        "total": 65934
+      },
+      "P008": {
+        "base": 57510,
+        "import_fee": 16103,
+        "total": 73613
+      },
+      "P009": {
+        "base": 70962,
+        "import_fee": 19869,
+        "total": 90831
+      },
+      "P010": {
+        "base": 18149,
+        "import_fee": 5082,
+        "total": 23231
+      },
+      "P011": {
+        "base": 15528,
+        "import_fee": 4348,
+        "total": 19876
+      },
+      "P012": {
+        "base": 17432,
+        "import_fee": 4881,
+        "total": 22313
+      },
+      "P013": {
+        "base": 37630,
+        "import_fee": 10536,
+        "total": 48166
+      },
+      "P014": {
+        "base": 31056,
+        "import_fee": 8696,
+        "total": 39752
+      },
+      "P015": {
+        "base": 40037,
+        "import_fee": 11210,
+        "total": 51247
+      },
+      "P017": {
+        "base": 38474,
+        "import_fee": 10773,
+        "total": 49247
+      },
+      "P018": {
+        "base": 37391,
+        "import_fee": 10469,
+        "total": 47860
+      },
+      "P019": {
+        "base": 68309,
+        "import_fee": 19127,
+        "total": 87436
+      },
+      "P021": {
+        "base": 21887,
+        "import_fee": 6128,
+        "total": 28015
+      },
+      "P022": {
+        "base": 52531,
+        "import_fee": 14709,
+        "total": 67240
+      },
+      "P023": {
+        "base": 18239,
+        "import_fee": 5107,
+        "total": 23346
+      },
+      "P025": {
+        "base": 24131,
+        "import_fee": 6757,
+        "total": 30888
+      },
+      "P026": {
+        "base": 11581,
+        "import_fee": 3243,
+        "total": 14824
+      },
+      "P027": {
+        "base": 13589,
+        "import_fee": 3805,
+        "total": 17394
+      },
+      "P028": {
+        "base": 26485,
+        "import_fee": 7416,
+        "total": 33901
+      },
+      "P029": {
+        "base": 9012,
+        "import_fee": 2523,
+        "total": 11535
+      },
+      "P030": {
+        "base": 16325,
+        "import_fee": 4571,
+        "total": 20896
+      },
+      "DYN_835768": {
+        "base": 53453,
+        "import_fee": 14967,
+        "total": 68420
+      },
+      "DYN_5651": {
+        "base": 103480,
+        "import_fee": 28974,
+        "total": 132454
+      },
+      "DYN_742949": {
+        "base": 51569,
+        "import_fee": 14439,
+        "total": 66008
+      },
+      "DYN_527243": {
+        "base": 76638,
+        "import_fee": 21459,
+        "total": 98097
+      },
+      "DYN_451221": {
+        "base": 59050,
+        "import_fee": 16534,
+        "total": 75584
+      },
+      "DYN_265087": {
+        "base": 71826,
+        "import_fee": 20111,
+        "total": 91937
+      }
+    },
+    "amazon_us": {
+      "P001": {
+        "base": 35822,
+        "import_fee": 10030,
+        "total": 45852
+      },
+      "P002": {
+        "base": 19483,
+        "import_fee": 5455,
+        "total": 24938
+      },
+      "P003": {
+        "base": 17368,
+        "import_fee": 4863,
+        "total": 22231
+      },
+      "P004": {
+        "base": 34263,
+        "import_fee": 9594,
+        "total": 43857
+      },
+      "P005": {
+        "base": 58366,
+        "import_fee": 16342,
+        "total": 74708
+      },
+      "P006": {
+        "base": 100116,
+        "import_fee": 28032,
+        "total": 128148
+      },
+      "P008": {
+        "base": 35737,
+        "import_fee": 10006,
+        "total": 45743
+      },
+      "P009": {
+        "base": 57287,
+        "import_fee": 16040,
+        "total": 73327
+      },
+      "P010": {
+        "base": 15697,
+        "import_fee": 4395,
+        "total": 20092
+      },
+      "P011": {
+        "base": 8684,
+        "import_fee": 2432,
+        "total": 11116
+      },
+      "P012": {
+        "base": 9602,
+        "import_fee": 2689,
+        "total": 12291
+      },
+      "P013": {
+        "base": 26052,
+        "import_fee": 7295,
+        "total": 33347
+      },
+      "P014": {
+        "base": 12525,
+        "import_fee": 3507,
+        "total": 16032
+      },
+      "P015": {
+        "base": 41666,
+        "import_fee": 11666,
+        "total": 53332
+      },
+      "P016": {
+        "base": 70140,
+        "import_fee": 19639,
+        "total": 89779
+      },
+      "P017": {
+        "base": 30143,
+        "import_fee": 8440,
+        "total": 38583
+      },
+      "P018": {
+        "base": 22544,
+        "import_fee": 6312,
+        "total": 28856
+      },
+      "P019": {
+        "base": 54274,
+        "import_fee": 15197,
+        "total": 69471
+      },
+      "P021": {
+        "base": 16699,
+        "import_fee": 4676,
+        "total": 21375
+      },
+      "P022": {
+        "base": 62625,
+        "import_fee": 17535,
+        "total": 80160
+      },
+      "P025": {
+        "base": 19205,
+        "import_fee": 5377,
+        "total": 24582
+      },
+      "P026": {
+        "base": 10854,
+        "import_fee": 3039,
+        "total": 13893
+      },
+      "P027": {
+        "base": 14529,
+        "import_fee": 4068,
+        "total": 18597
+      },
+      "P028": {
+        "base": 16699,
+        "import_fee": 4676,
+        "total": 21375
+      },
+      "P029": {
+        "base": 15782,
+        "import_fee": 4419,
+        "total": 20201
+      },
+      "P030": {
+        "base": 41750,
+        "import_fee": 11690,
+        "total": 53440
+      },
+      "DYN_532664": {
+        "base": 58228,
+        "import_fee": 16304,
+        "total": 74532
+      },
+      "DYN_469835": {
+        "base": 33965,
+        "import_fee": 9510,
+        "total": 43475
+      },
+      "DYN_78852": {
+        "base": 46033,
+        "import_fee": 12889,
+        "total": 58922
+      },
+      "DYN_835768": {
+        "base": 52826,
+        "import_fee": 14791,
+        "total": 67617
+      },
+      "DYN_251289": {
+        "base": 71416,
+        "import_fee": 19996,
+        "total": 91412
+      },
+      "DYN_456085": {
+        "base": 73764,
+        "import_fee": 20654,
+        "total": 94418
+      },
+      "DYN_92225": {
+        "base": 64450,
+        "import_fee": 18046,
+        "total": 82496
+      },
+      "DYN_220317": {
+        "base": 77228,
+        "import_fee": 21624,
+        "total": 98852
+      },
+      "DYN_742949": {
+        "base": 51965,
+        "import_fee": 14550,
+        "total": 66515
+      },
+      "DYN_755935": {
+        "base": 64970,
+        "import_fee": 18192,
+        "total": 83162
+      },
+      "DYN_265087": {
+        "base": 72685,
+        "import_fee": 20352,
+        "total": 93037
+      },
+      "DYN_614130": {
+        "base": 109687,
+        "import_fee": 30712,
+        "total": 140399
+      },
+      "DYN_410254": {
+        "base": 54228,
+        "import_fee": 15184,
+        "total": 69412
+      }
+    },
+    "amazon_uk": {
+      "P001": {
+        "base": 18868,
+        "import_fee": 5283,
+        "total": 24151
+      },
+      "P002": {
+        "base": 27666,
+        "import_fee": 7746,
+        "total": 35412
+      },
+      "P003": {
+        "base": 20617,
+        "import_fee": 5773,
+        "total": 26390
+      },
+      "P004": {
+        "base": 40277,
+        "import_fee": 11278,
+        "total": 51555
+      },
+      "P006": {
+        "base": 44992,
+        "import_fee": 12598,
+        "total": 57590
+      },
+      "P008": {
+        "base": 41340,
+        "import_fee": 11575,
+        "total": 52915
+      },
+      "P009": {
+        "base": 66247,
+        "import_fee": 18549,
+        "total": 84796
+      },
+      "P010": {
+        "base": 14310,
+        "import_fee": 4007,
+        "total": 18317
+      },
+      "P011": {
+        "base": 8369,
+        "import_fee": 2343,
+        "total": 10712
+      },
+      "P012": {
+        "base": 17384,
+        "import_fee": 4868,
+        "total": 22252
+      },
+      "P013": {
+        "base": 23319,
+        "import_fee": 6529,
+        "total": 29848
+      },
+      "P014": {
+        "base": 15688,
+        "import_fee": 4393,
+        "total": 20081
+      },
+      "P015": {
+        "base": 21094,
+        "import_fee": 5906,
+        "total": 27000
+      },
+      "P017": {
+        "base": 33915,
+        "import_fee": 9496,
+        "total": 43411
+      },
+      "P018": {
+        "base": 34975,
+        "import_fee": 9793,
+        "total": 44768
+      },
+      "P019": {
+        "base": 68794,
+        "import_fee": 19262,
+        "total": 88056
+      },
+      "P021": {
+        "base": 15794,
+        "import_fee": 4422,
+        "total": 20216
+      },
+      "P022": {
+        "base": 70583,
+        "import_fee": 19763,
+        "total": 90346
+      },
+      "P023": {
+        "base": 18607,
+        "import_fee": 5210,
+        "total": 23817
+      },
+      "P025": {
+        "base": 35509,
+        "import_fee": 9943,
+        "total": 45452
+      },
+      "P026": {
+        "base": 12008,
+        "import_fee": 3362,
+        "total": 15370
+      },
+      "P027": {
+        "base": 13026,
+        "import_fee": 3647,
+        "total": 16673
+      },
+      "P028": {
+        "base": 26545,
+        "import_fee": 7433,
+        "total": 33978
+      },
+      "P030": {
+        "base": 14352,
+        "import_fee": 4019,
+        "total": 18371
+      },
+      "DYN_532664": {
+        "base": 56856,
+        "import_fee": 15920,
+        "total": 72776
+      },
+      "DYN_378547": {
+        "base": 82879,
+        "import_fee": 23206,
+        "total": 106085
+      },
+      "DYN_251289": {
+        "base": 71246,
+        "import_fee": 19949,
+        "total": 91195
+      },
+      "DYN_92225": {
+        "base": 64043,
+        "import_fee": 17932,
+        "total": 81975
+      },
+      "DYN_220317": {
+        "base": 77918,
+        "import_fee": 21817,
+        "total": 99735
+      },
+      "DYN_527243": {
+        "base": 76136,
+        "import_fee": 21318,
+        "total": 97454
+      },
+      "DYN_410254": {
+        "base": 54918,
+        "import_fee": 15377,
+        "total": 70295
+      }
+    },
+    "flipkart": {
+      "P001": {
+        "base": 48900,
+        "import_fee": 0,
+        "total": 48900
+      },
+      "P002": {
+        "base": 58900,
+        "import_fee": 0,
+        "total": 58900
+      },
+      "P003": {
+        "base": 119900,
+        "import_fee": 0,
+        "total": 119900
+      },
+      "P004": {
+        "base": 74999,
+        "import_fee": 0,
+        "total": 74999
+      },
+      "P005": {
+        "base": 119900,
+        "import_fee": 0,
+        "total": 119900
+      },
+      "P006": {
+        "base": 84900,
+        "import_fee": 0,
+        "total": 84900
+      },
+      "P013": {
+        "base": 35999,
+        "import_fee": 0,
+        "total": 35999
+      },
+      "P014": {
+        "base": 54443,
+        "import_fee": 0,
+        "total": 54443
+      },
+      "P023": {
+        "base": 17999,
+        "import_fee": 0,
+        "total": 17999
+      },
+      "P024": {
+        "base": 8999,
+        "import_fee": 0,
+        "total": 8999
+      },
+      "P026": {
+        "base": 14364,
+        "import_fee": 0,
+        "total": 14364
+      },
+      "P027": {
+        "base": 17990,
+        "import_fee": 0,
+        "total": 17990
+      },
+      "P028": {
+        "base": 24999,
+        "import_fee": 0,
+        "total": 24999
+      },
+      "P029": {
+        "base": 15999,
+        "import_fee": 0,
+        "total": 15999
+      },
+      "P030": {
+        "base": 18999,
+        "import_fee": 0,
+        "total": 18999
+      },
+      "DYN_469835": {
+        "base": 31608,
+        "import_fee": 0,
+        "total": 31608
+      },
+      "DYN_822671": {
+        "base": 97526,
+        "import_fee": 0,
+        "total": 97526
+      },
+      "DYN_378547": {
+        "base": 84056,
+        "import_fee": 0,
+        "total": 84056
+      },
+      "DYN_835768": {
+        "base": 52913,
+        "import_fee": 0,
+        "total": 52913
+      },
+      "DYN_220317": {
+        "base": 75856,
+        "import_fee": 0,
+        "total": 75856
+      },
+      "DYN_742949": {
+        "base": 49608,
+        "import_fee": 0,
+        "total": 49608
+      },
+      "DYN_570127": {
+        "base": 47218,
+        "import_fee": 0,
+        "total": 47218
+      },
+      "DYN_265087": {
+        "base": 71913,
+        "import_fee": 0,
+        "total": 71913
+      },
+      "DYN_410254": {
+        "base": 52856,
+        "import_fee": 0,
+        "total": 52856
+      }
+    },
+    "best_buy": {
+      "P001": {
+        "base": 36538,
+        "import_fee": 0,
+        "total": 36538
+      },
+      "P005": {
+        "base": 59534,
+        "import_fee": 0,
+        "total": 59534
+      },
+      "P006": {
+        "base": 102119,
+        "import_fee": 0,
+        "total": 102119
+      },
+      "P009": {
+        "base": 83499,
+        "import_fee": 0,
+        "total": 83499
+      },
+      "P013": {
+        "base": 26573,
+        "import_fee": 0,
+        "total": 26573
+      },
+      "P015": {
+        "base": 75149,
+        "import_fee": 0,
+        "total": 75149
+      },
+      "P016": {
+        "base": 71543,
+        "import_fee": 0,
+        "total": 71543
+      },
+      "P017": {
+        "base": 69304,
+        "import_fee": 0,
+        "total": 69304
+      },
+      "P018": {
+        "base": 41749,
+        "import_fee": 0,
+        "total": 41749
+      },
+      "P019": {
+        "base": 71809,
+        "import_fee": 0,
+        "total": 71809
+      },
+      "P027": {
+        "base": 14820,
+        "import_fee": 0,
+        "total": 14820
+      },
+      "P029": {
+        "base": 16097,
+        "import_fee": 0,
+        "total": 16097
+      },
+      "P030": {
+        "base": 42585,
+        "import_fee": 0,
+        "total": 42585
+      },
+      "DYN_378547": {
+        "base": 82918,
+        "import_fee": 0,
+        "total": 82918
+      },
+      "DYN_24337": {
+        "base": 42696,
+        "import_fee": 0,
+        "total": 42696
+      },
+      "DYN_78852": {
+        "base": 45864,
+        "import_fee": 0,
+        "total": 45864
+      },
+      "DYN_456085": {
+        "base": 76482,
+        "import_fee": 0,
+        "total": 76482
+      },
+      "DYN_527243": {
+        "base": 76893,
+        "import_fee": 0,
+        "total": 76893
+      },
+      "DYN_451221": {
+        "base": 58011,
+        "import_fee": 0,
+        "total": 58011
+      },
+      "DYN_423303": {
+        "base": 57864,
+        "import_fee": 0,
+        "total": 57864
+      },
+      "DYN_204311": {
+        "base": 49016,
+        "import_fee": 0,
+        "total": 49016
+      },
+      "DYN_614130": {
+        "base": 110100,
+        "import_fee": 0,
+        "total": 110100
+      }
+    },
+    "samsung": {
+      "P013": {
+        "base": 41749,
+        "import_fee": 0,
+        "total": 41749
+      },
+      "P015": {
+        "base": 56696,
+        "import_fee": 0,
+        "total": 56696
+      },
+      "P017": {
+        "base": 69222,
+        "import_fee": 0,
+        "total": 69222
+      },
+      "P018": {
+        "base": 50099,
+        "import_fee": 0,
+        "total": 50099
+      },
+      "P019": {
+        "base": 54274,
+        "import_fee": 0,
+        "total": 54274
+      },
+      "DYN_378547": {
+        "base": 83878,
+        "import_fee": 0,
+        "total": 83878
+      },
+      "DYN_24337": {
+        "base": 40677,
+        "import_fee": 0,
+        "total": 40677
+      },
+      "DYN_251289": {
+        "base": 71600,
+        "import_fee": 0,
+        "total": 71600
+      },
+      "DYN_92225": {
+        "base": 66075,
+        "import_fee": 0,
+        "total": 66075
+      },
+      "DYN_522444": {
+        "base": 117505,
+        "import_fee": 0,
+        "total": 117505
+      },
+      "DYN_755935": {
+        "base": 63896,
+        "import_fee": 0,
+        "total": 63896
+      },
+      "DYN_204311": {
+        "base": 48358,
+        "import_fee": 0,
+        "total": 48358
+      }
+    },
+    "aliexpress": {
+      "P027": {
+        "base": 13444,
+        "import_fee": 0,
+        "total": 13444
+      },
+      "DYN_822671": {
+        "base": 98639,
+        "import_fee": 0,
+        "total": 98639
+      },
+      "DYN_78852": {
+        "base": 46074,
+        "import_fee": 0,
+        "total": 46074
+      },
+      "DYN_456085": {
+        "base": 74204,
+        "import_fee": 0,
+        "total": 74204
+      },
+      "DYN_522444": {
+        "base": 119979,
+        "import_fee": 0,
+        "total": 119979
+      },
+      "DYN_527243": {
+        "base": 76381,
+        "import_fee": 0,
+        "total": 76381
+      },
+      "DYN_204311": {
+        "base": 48166,
+        "import_fee": 0,
+        "total": 48166
+      }
+    },
+    "motorola": {
+      "P029": {
+        "base": 15864,
+        "import_fee": 0,
+        "total": 15864
+      },
+      "P030": {
+        "base": 14194,
+        "import_fee": 0,
+        "total": 14194
+      },
+      "DYN_822671": {
+        "base": 98153,
+        "import_fee": 0,
+        "total": 98153
+      },
+      "DYN_5651": {
+        "base": 103692,
+        "import_fee": 0,
+        "total": 103692
+      },
+      "DYN_451221": {
+        "base": 57822,
+        "import_fee": 0,
+        "total": 57822
+      },
+      "DYN_204311": {
+        "base": 48955,
+        "import_fee": 0,
+        "total": 48955
+      }
+    },
+    "shopease": {
+      "SIM001": {
+        "base": 67500,
+        "import_fee": 0,
+        "total": 67500
+      },
+      "SIM002": {
+        "base": 70700,
+        "import_fee": 0,
+        "total": 70700
+      },
+      "SIM004": {
+        "base": 124400,
+        "import_fee": 0,
+        "total": 124400
+      },
+      "SIM005": {
+        "base": 80500,
+        "import_fee": 0,
+        "total": 80500
+      },
+      "SIM008": {
+        "base": 63100,
+        "import_fee": 0,
+        "total": 63100
+      },
+      "SIM012": {
+        "base": 98200,
+        "import_fee": 0,
+        "total": 98200
+      },
+      "SIM015": {
+        "base": 82500,
+        "import_fee": 0,
+        "total": 82500
+      },
+      "DYN_532664": {
+        "base": 56630,
+        "import_fee": 0,
+        "total": 56630
+      },
+      "DYN_469835": {
+        "base": 32314,
+        "import_fee": 0,
+        "total": 32314
+      },
+      "DYN_78852": {
+        "base": 44981,
+        "import_fee": 0,
+        "total": 44981
+      },
+      "DYN_5651": {
+        "base": 102596,
+        "import_fee": 0,
+        "total": 102596
+      },
+      "DYN_92225": {
+        "base": 64633,
+        "import_fee": 0,
+        "total": 64633
+      },
+      "DYN_220317": {
+        "base": 75630,
+        "import_fee": 0,
+        "total": 75630
+      },
+      "DYN_570127": {
+        "base": 47913,
+        "import_fee": 0,
+        "total": 47913
+      },
+      "DYN_423303": {
+        "base": 56981,
+        "import_fee": 0,
+        "total": 56981
+      },
+      "DYN_410254": {
+        "base": 52630,
+        "import_fee": 0,
+        "total": 52630
+      }
+    },
+    "croma": {
+      "SIM001": {
+        "base": 70600,
+        "import_fee": 0,
+        "total": 70600
+      },
+      "SIM002": {
+        "base": 68100,
+        "import_fee": 0,
+        "total": 68100
+      },
+      "SIM004": {
+        "base": 123000,
+        "import_fee": 0,
+        "total": 123000
+      },
+      "SIM005": {
+        "base": 79700,
+        "import_fee": 0,
+        "total": 79700
+      },
+      "SIM007": {
+        "base": 136000,
+        "import_fee": 0,
+        "total": 136000
+      },
+      "SIM010": {
+        "base": 40500,
+        "import_fee": 0,
+        "total": 40500
+      },
+      "SIM011": {
+        "base": 40700,
+        "import_fee": 0,
+        "total": 40700
+      },
+      "SIM013": {
+        "base": 36900,
+        "import_fee": 0,
+        "total": 36900
+      },
+      "SIM014": {
+        "base": 38600,
+        "import_fee": 0,
+        "total": 38600
+      },
+      "SIM015": {
+        "base": 86100,
+        "import_fee": 0,
+        "total": 86100
+      },
+      "DYN_822671": {
+        "base": 100359,
+        "import_fee": 0,
+        "total": 100359
+      },
+      "DYN_24337": {
+        "base": 42381,
+        "import_fee": 0,
+        "total": 42381
+      },
+      "DYN_5651": {
+        "base": 105496,
+        "import_fee": 0,
+        "total": 105496
+      },
+      "DYN_522444": {
+        "base": 118556,
+        "import_fee": 0,
+        "total": 118556
+      },
+      "DYN_451221": {
+        "base": 59696,
+        "import_fee": 0,
+        "total": 59696
+      },
+      "DYN_423303": {
+        "base": 58385,
+        "import_fee": 0,
+        "total": 58385
+      }
+    },
+    "quickkart": {
+      "SIM002": {
+        "base": 67700,
+        "import_fee": 0,
+        "total": 67700
+      },
+      "SIM003": {
+        "base": 59000,
+        "import_fee": 0,
+        "total": 59000
+      },
+      "SIM006": {
+        "base": 91500,
+        "import_fee": 0,
+        "total": 91500
+      },
+      "SIM008": {
+        "base": 66900,
+        "import_fee": 0,
+        "total": 66900
+      },
+      "SIM009": {
+        "base": 25600,
+        "import_fee": 0,
+        "total": 25600
+      },
+      "SIM010": {
+        "base": 40400,
+        "import_fee": 0,
+        "total": 40400
+      },
+      "SIM011": {
+        "base": 39200,
+        "import_fee": 0,
+        "total": 39200
+      },
+      "SIM012": {
+        "base": 102600,
+        "import_fee": 0,
+        "total": 102600
+      },
+      "SIM014": {
+        "base": 37900,
+        "import_fee": 0,
+        "total": 37900
+      },
+      "DYN_742949": {
+        "base": 51798,
+        "import_fee": 0,
+        "total": 51798
+      },
+      "DYN_570127": {
+        "base": 47339,
+        "import_fee": 0,
+        "total": 47339
+      },
+      "DYN_755935": {
+        "base": 64908,
+        "import_fee": 0,
+        "total": 64908
+      },
+      "DYN_423303": {
+        "base": 56287,
+        "import_fee": 0,
+        "total": 56287
+      },
+      "DYN_265087": {
+        "base": 72453,
+        "import_fee": 0,
+        "total": 72453
+      },
+      "DYN_614130": {
+        "base": 109995,
+        "import_fee": 0,
+        "total": 109995
+      }
+    },
+    "megamart": {
+      "SIM002": {
+        "base": 68400,
+        "import_fee": 0,
+        "total": 68400
+      },
+      "SIM003": {
+        "base": 61900,
+        "import_fee": 0,
+        "total": 61900
+      },
+      "SIM004": {
+        "base": 127200,
+        "import_fee": 0,
+        "total": 127200
+      },
+      "SIM006": {
+        "base": 91900,
+        "import_fee": 0,
+        "total": 91900
+      },
+      "SIM011": {
+        "base": 39300,
+        "import_fee": 0,
+        "total": 39300
+      },
+      "SIM012": {
+        "base": 104500,
+        "import_fee": 0,
+        "total": 104500
+      },
+      "SIM013": {
+        "base": 39700,
+        "import_fee": 0,
+        "total": 39700
+      },
+      "SIM015": {
+        "base": 86100,
+        "import_fee": 0,
+        "total": 86100
+      },
+      "DYN_532664": {
+        "base": 58918,
+        "import_fee": 0,
+        "total": 58918
+      },
+      "DYN_469835": {
+        "base": 33798,
+        "import_fee": 0,
+        "total": 33798
+      },
+      "DYN_835768": {
+        "base": 53685,
+        "import_fee": 0,
+        "total": 53685
+      },
+      "DYN_522444": {
+        "base": 120500,
+        "import_fee": 0,
+        "total": 120500
+      },
+      "DYN_570127": {
+        "base": 46402,
+        "import_fee": 0,
+        "total": 46402
+      }
+    },
+    "bazaarhub": {
+      "SIM004": {
+        "base": 128400,
+        "import_fee": 0,
+        "total": 128400
+      },
+      "SIM005": {
+        "base": 84000,
+        "import_fee": 0,
+        "total": 84000
+      },
+      "SIM007": {
+        "base": 136800,
+        "import_fee": 0,
+        "total": 136800
+      },
+      "SIM009": {
+        "base": 26100,
+        "import_fee": 0,
+        "total": 26100
+      },
+      "SIM011": {
+        "base": 37400,
+        "import_fee": 0,
+        "total": 37400
+      },
+      "SIM014": {
+        "base": 37900,
+        "import_fee": 0,
+        "total": 37900
+      },
+      "SIM015": {
+        "base": 82100,
+        "import_fee": 0,
+        "total": 82100
+      },
+      "DYN_24337": {
+        "base": 43488,
+        "import_fee": 0,
+        "total": 43488
+      },
+      "DYN_251289": {
+        "base": 69990,
+        "import_fee": 0,
+        "total": 69990
+      },
+      "DYN_456085": {
+        "base": 76035,
+        "import_fee": 0,
+        "total": 76035
+      },
+      "DYN_755935": {
+        "base": 65056,
+        "import_fee": 0,
+        "total": 65056
+      },
+      "DYN_614130": {
+        "base": 108200,
+        "import_fee": 0,
+        "total": 108200
+      }
+    }
+  }
+}

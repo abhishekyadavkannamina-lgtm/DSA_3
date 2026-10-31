@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}Match Listings – Product Match Lab{% endblock %}
+
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem;">
+  <div>
+    <h1>Match Listings</h1>
+    <p class="subtitle" style="margin-bottom: 0;">We find listings that are really the same product and show the best price.</p>
+  </div>
+  <button id="runPipelineBtn" class="btn">Run Full Pipeline</button>
+</div>
+
+<!-- Raw Listings Table -->
+<div class="card" id="rawSection">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+    <h3 style="margin: 0;">Raw Listings (Before)</h3>
+    <span class="tag" style="background: #FEF9C3; color: #854D0E;">Unmatched</span>
+  </div>
+  <table id="rawTable">
+    <thead>
+      <tr>
+        <th>Seller</th>
+        <th>Source</th>
+        <th>Title</th>
+        <th>Price (INR)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in listings %}
+      <tr>
+        <td>{{ item.seller }}</td>
+        <td>{{ item.source }}</td>
+        <td><code>{{ item.title }}</code></td>
+        <td>₹{{ "{:,}".format(item.price_inr) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- Loading state -->
+<div id="loadingState" style="display: none; text-align: center; padding: 3rem;">
+  <p style="color: var(--accent); font-weight: 600;">Processing listings...</p>
+</div>
+
+<!-- Results Section (hidden initially) -->
+<div id="resultsSection" style="display: none;">
+  
+  <div class="card" style="background: #F0FDFA; border-color: var(--accent);">
+    <h2 style="margin-top: 0; color: var(--accent-hover);">Matched Products (After)</h2>
+    <p style="margin-bottom: 1.5rem; color: var(--text-muted);">We grouped the messy titles into clean canonical products. Here are the best deals.</p>
+    
+    <div id="groupsContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;">
+      <!-- Groups injected here by JS -->
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-bottom: 1rem; margin-top: 0;">Algorithm Evaluation</h3>
+    <div style="display: flex; gap: 2rem;">
+      <div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.2rem;">Precision</p>
+        <p style="font-size: 1.5rem; font-weight: 700;" id="evalPrecision">-</p>
+      </div>
+      <div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.2rem;">Recall</p>
+        <p style="font-size: 1.5rem; font-weight: 700;" id="evalRecall">-</p>
+      </div>
+      <div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.2rem;">F1 Score</p>
+        <p style="font-size: 1.5rem; font-weight: 700; color: var(--accent);" id="evalF1">-</p>
+      </div>
+    </div>
+  </div>
+
+  <details>
+    <summary>Show me how it works (Rolling Hash Visualiser)</summary>
+    <div class="details-content">
+      <p style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-muted);">
+        To find exact matches fast, we convert words into numbers (hashes) using a sliding window.
+      </p>
+      <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+        <input type="text" id="vizText" value="samsung galaxy s24 256gb black" style="flex: 1; padding: 0.5rem; border: 1px solid var(--border); border-radius: var(--radius);">
+        <input type="text" id="vizPattern" value="galaxy" style="width: 150px; padding: 0.5rem; border: 1px solid var(--border); border-radius: var(--radius);">
+        <button id="vizRunBtn" class="btn btn-outline">Hash It</button>
+      </div>
+      <div id="vizOutput" style="background: #111827; color: #10B981; font-family: monospace; padding: 1rem; border-radius: var(--radius); min-height: 100px; white-space: pre-wrap;">
+        Ready.
+      </div>
+    </div>
+  </details>
+
+</div>
+
+<p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 2rem;">
+  <em>In simple words: We clean the text, calculate a similarity score for every pair of listings, and group them together if the score is high enough.</em>
+</p>
+
+<!-- Pass listings to JS safely -->
+<script id="listingsData" type="application/json">
+  {{ listings | tojson | safe }}
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/match.js"></script>
+{% endblock %}

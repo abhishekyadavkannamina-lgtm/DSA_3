@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}Order Assignment – Product Match Lab{% endblock %}
+
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem;">
+  <div>
+    <h1>Order Assignment</h1>
+    <p class="subtitle" style="margin-bottom: 0;">Sellers have limited stock. We assign orders to sellers so as many orders as possible are fulfilled.</p>
+  </div>
+  <button id="runAssignBtn" class="btn">Assign Orders</button>
+</div>
+
+<!-- Add Order Form -->
+<div class="card" style="position: relative; z-index: 50;">
+  <h3 style="margin-top: 0; margin-bottom: 1rem;">Add New Customer Order</h3>
+  <div style="display: flex; gap: 1rem; align-items: flex-start;">
+    <input type="text" id="buyerInput" placeholder="Buyer Name (e.g. CityMobiles)" style="flex: 1; padding: 0.8rem; border: 1px solid var(--border); border-radius: var(--radius); font-size: 0.95rem;">
+    
+    <div style="flex: 2; position: relative;">
+      <input type="text" id="productInput" autocomplete="off" placeholder="Search product (e.g. Pixel 8)" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border); border-radius: var(--radius); font-size: 0.95rem;">
+      <div id="productSuggestions" style="display: none; position: absolute; left: 0; right: 0; top: 100%; background: #fff; border: 1px solid var(--border); border-top: none; border-radius: 0 0 var(--radius) var(--radius); box-shadow: var(--shadow); max-height: 200px; overflow-y: auto; z-index: 100;"></div>
+    </div>
+    
+    <input type="number" id="qtyInput" placeholder="Qty" min="1" max="100" style="width: 100px; padding: 0.8rem; border: 1px solid var(--border); border-radius: var(--radius); font-size: 0.95rem;">
+    <button id="addOrderBtn" class="btn" style="padding: 0.8rem 1.2rem;">+ Add</button>
+  </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+  
+  <div class="card" style="margin-bottom: 0;">
+    <h3 style="margin-top: 0; margin-bottom: 1rem;">Customer Orders</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Buyer</th>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="ordersTableBody">
+        <!-- Injected by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card" style="margin-bottom: 0;">
+    <h3 style="margin-top: 0; margin-bottom: 1rem;">Seller Stocks</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Seller</th>
+          <th>Total Capacity</th>
+          <th>Products in Stock</th>
+        </tr>
+      </thead>
+      <tbody id="sellersTableBody">
+        <!-- Injected by JS -->
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- Loading state -->
+<div id="loadingState" style="display: none; text-align: center; padding: 3rem;">
+  <p style="color: var(--accent); font-weight: 600;">Finding optimal flow...</p>
+</div>
+
+<!-- Results Section -->
+<div id="resultsBox" class="card" style="background: #F0FDFA; border-color: var(--accent); display: none;">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+    <div>
+      <h3 style="margin-top: 0; color: var(--accent-hover); margin-bottom: 0.2rem;">Fulfilment Plan</h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted);">Who ships what to whom.</p>
+    </div>
+    <div style="text-align: right;">
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.2rem;">Total Fulfilled</p>
+      <p style="font-size: 1.5rem; font-weight: 700; color: var(--success);" id="totalFulfilled">0 / 0</p>
+    </div>
+  </div>
+
+  <table style="background: #fff;">
+    <thead>
+      <tr>
+        <th>Seller</th>
+        <th>Product</th>
+        <th>Quantity Assigned</th>
+      </tr>
+    </thead>
+    <tbody id="planTableBody">
+      <!-- Plan injected here -->
+    </tbody>
+  </table>
+</div>
+
+<details style="margin-top: 2rem;">
+  <summary>Show me how it works (Flow Visualiser)</summary>
+  <div class="details-content">
+    <p style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-muted);">
+      We treat this like water flowing through pipes. The width of the pipe is the seller's stock. We keep finding paths from the orders to the sellers until all pipes are full.
+    </p>
+    <div id="flowOutput" style="background: #111827; color: #10B981; font-family: monospace; padding: 1rem; border-radius: var(--radius); min-height: 200px; white-space: pre-wrap; font-size: 0.9rem;">
+      Run the assignment first to see the flow paths.
+    </div>
+  </div>
+</details>
+
+<p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 2rem;">
+  <em>In simple words: We treat sellers like pipes with limited capacity and find the best way to push as many orders through them as possible without breaking the stock limits.</em>
+</p>
+
+<!-- Pass initial data to JS -->
+<script id="assignData" type="application/json">
+  {{ data | tojson | safe }}
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/assign.js"></script>
+{% endblock %}

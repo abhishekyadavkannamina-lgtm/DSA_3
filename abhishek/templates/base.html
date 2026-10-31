@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Product Match Lab{% endblock %}</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <!-- Blurry Blob Background -->
+  <div class="blurry-blob-container">
+    <div class="blurry-blob blob-purple"></div>
+    <div class="blurry-blob blob-blue"></div>
+  </div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="/" class="brand">Product Match Lab</a>
+      <div class="nav-links">
+        <a href="/match">Match Listings</a>
+        <a href="/cart">Smart Cart</a>
+        <a href="/assign">Order Assignment</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <p>Data Structures & Algorithms-3 (25CS2103E) | Team 9, Section 13 | Guide: Dr. Dyuti Banerjee</p>
+    <p style="margin-top: 0.5rem;"><a href="/about">How it works (Course Details & Data)</a></p>
+  </footer>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Smart Cart – Product Match Lab{% endblock %}
+
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem;">
+  <div>
+    <h1>Smart Cart</h1>
+    <p class="subtitle" style="margin-bottom: 0;">Build your cart and we will find the absolute cheapest way to buy it.</p>
+  </div>
+  <button id="runCartBtn" class="btn">Find Cheapest Cart</button>
+</div>
+
+<!-- Search Bar -->
+<div class="card" style="position: relative; overflow: visible; z-index: 50;">
+  <h3 style="margin-top: 0; margin-bottom: 1rem;">Search Products</h3>
+  <input type="text" id="searchInput" placeholder="e.g., iPhone 15, Galaxy S24..." autocomplete="off" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border); border-radius: var(--radius); font-size: 1rem;">
+  
+  <div id="suggestions" style="display: none; position: absolute; left: 1.5rem; right: 1.5rem; top: 100%; background: #fff; border: 1px solid var(--border); border-top: none; border-radius: 0 0 var(--radius) var(--radius); box-shadow: var(--shadow); max-height: 250px; overflow-y: auto;">
+    <!-- Suggestions injected here -->
+  </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 300px; gap: 1.5rem;">
+  
+  <div class="card" style="margin-bottom: 0;">
+    <h3 style="margin-top: 0; margin-bottom: 1rem;">Your Cart</h3>
+    <p id="emptyCartMsg" style="color: var(--text-muted); font-size: 0.95rem;">Your cart is empty. Search and add products above.</p>
+    
+    <div id="cartItemsContainer" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <!-- Cart items injected here -->
+    </div>
+  </div>
+
+  <div class="card" id="resultsBox" style="background: #F0FDFA; border-color: var(--accent); display: none; margin-bottom: 0;">
+    <h3 style="margin-top: 0; color: var(--accent-hover); margin-bottom: 1rem;">Optimal Split</h3>
+    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">Lowest total cost (including shipping & import fees):</p>
+    <p style="font-size: 2rem; font-weight: 700; color: var(--success); margin-bottom: 1.5rem;" id="totalCost">₹0</p>
+    
+    <div id="planList" style="display: flex; flex-direction: column; gap: 0.8rem;">
+      <!-- Plan injected here -->
+    </div>
+    
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 1.5rem 0;">
+    
+    <p style="font-size: 0.85rem; color: var(--text-muted);">
+      Compared to buying everything from one seller, this split saves you:
+    </p>
+    <p style="font-size: 1.2rem; font-weight: 600; color: var(--accent); margin-top: 0.3rem;" id="savingsAmount">₹0</p>
+  </div>
+
+</div>
+
+<div id="loadingState" style="display: none; text-align: center; padding: 3rem;">
+  <p style="color: var(--accent); font-weight: 600;">Calculating billions of combinations...</p>
+</div>
+
+<details style="margin-top: 2rem;">
+  <summary>Show me how it works (DP Visualiser)</summary>
+  <div class="details-content">
+    <p style="margin-bottom: 1rem; font-size: 0.95rem; color: var(--text-muted);">
+      We don't try every combination (which would be slow). Instead, we build up the answer by finding the cheapest way to buy smaller subsets of items first.
+    </p>
+    <div id="dpOutput" style="background: #111827; color: #10B981; font-family: monospace; padding: 1rem; border-radius: var(--radius); min-height: 200px; white-space: pre-wrap; font-size: 0.9rem;">
+      Run the cart first to see the algorithm steps.
+    </div>
+  </div>
+</details>
+
+<p style="text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 2rem;">
+  <em>In simple words: We find the absolute lowest total price by calculating the best mix of sellers, taking into account their item prices, shipping fees, and international import fees.</em>
+</p>
+
+<script id="catalogData" type="application/json">
+  {{ data | tojson | safe }}
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/cart.js"></script>
+{% endblock %}

@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block title %}How it works – Product Match Lab{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1>How it works (Course Details)</h1>
+  <p class="subtitle">Data Structures & Algorithms-3 (25CS2103E) Course Project</p>
+
+  <p style="margin-bottom: 2rem;">
+    This project demonstrates four advanced algorithm strategies to solve real-world e-commerce problems.
+    All algorithms are implemented from scratch in pure Python.
+  </p>
+
+  <h2>Data Sources</h2>
+  <p style="margin-bottom: 1rem;">The listings are generated from 3 real datasets:</p>
+  <ul style="margin-left: 1.5rem; margin-bottom: 2rem; color: var(--text-muted);">
+    <li><strong>cellphones_data.csv:</strong> Amazon and Best Buy US pricing.</li>
+    <li><strong>flipkart_smartphones.csv:</strong> Real Flipkart listings.</li>
+    <li><strong>gsmarena.csv:</strong> Global product models.</li>
+    <li><em>Note: A small number of listings (marked as 'simulated' source) were generated to guarantee near-miss edge cases for the algorithms to catch.</em></li>
+  </ul>
+
+  <h2>Course Outcomes (CO) Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>CO</th>
+        <th>Topic</th>
+        <th>File</th>
+        <th>What it does in simple words</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>CO1</strong></td>
+        <td>Strategy Selection</td>
+        <td><a href="file:///Users/rikhil/Desktop/vansika/algorithms/co1_strategy.py">co1_strategy.py</a></td>
+        <td>Looks at a problem's signature and picks the best algorithm to solve it.</td>
+      </tr>
+      <tr>
+        <td><strong>CO2</strong></td>
+        <td>Rabin-Karp Rolling Hash</td>
+        <td><a href="file:///Users/rikhil/Desktop/vansika/algorithms/co2_rabin_karp.py">co2_rabin_karp.py</a></td>
+        <td>Instantly finds identical text strings by turning words into numbers (hashes).</td>
+      </tr>
+      <tr>
+        <td><strong>CO3</strong></td>
+        <td>Bitmask DP</td>
+        <td><a href="file:///Users/rikhil/Desktop/vansika/algorithms/co3_bitmask_dp.py">co3_bitmask_dp.py</a></td>
+        <td>Finds the cheapest seller combination for a cart by remembering subset costs instead of trying every possibility.</td>
+      </tr>
+      <tr>
+        <td><strong>CO4</strong></td>
+        <td>Edmonds-Karp Max-Flow</td>
+        <td><a href="file:///Users/rikhil/Desktop/vansika/algorithms/co4_max_flow.py">co4_max_flow.py</a></td>
+        <td>Treats sellers like water pipes with limits, and finds the maximum number of orders that can flow through them.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Why DP is better than Brute Force (CO3)</h2>
+  <p style="margin-bottom: 1rem;">Trying every seller combination one by one takes 4ⁿ steps. Bitmask DP solves the same problem in n · 2ⁿ steps.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Number of Items (n)</th>
+        <th>Brute Force (4ⁿ steps)</th>
+        <th>Bitmask DP (n · 2ⁿ steps)</th>
+        <th>Speedup</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in comp_table %}
+      <tr>
+        <td>{{ row.n }}</td>
+        <td>{{ "{:,}".format(row.brute_force) }}</td>
+        <td>{{ "{:,}".format(row.dp_bitmask) }}</td>
+        <td style="color: var(--success); font-weight: 600;">{{ "{:,}".format(row.speedup) }}x faster</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h2>Literature Survey Comparison</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Approach</th>
+        <th>Pros</th>
+        <th>Cons</th>
+        <th>Used Here?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rule-based / Exact Match</td>
+        <td>100% precision, very fast</td>
+        <td>Fails on typos and formatting changes</td>
+        <td>Yes (for exact duplicates)</td>
+      </tr>
+      <tr>
+        <td>String Similarity (RapidFuzz)</td>
+        <td>Handles typos and missing spaces well</td>
+        <td>Slower, might merge different storage sizes</td>
+        <td>Yes (combined with detail penalty)</td>
+      </tr>
+      <tr>
+        <td>TF-IDF + Cosine Similarity</td>
+        <td>Good for long descriptions</td>
+        <td>Ignores word order completely</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>Deep Learning (Embeddings)</td>
+        <td>Understands meaning and context</td>
+        <td>Slow, requires GPU, overkill for simple titles</td>
+        <td>No</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+{% endblock %}
